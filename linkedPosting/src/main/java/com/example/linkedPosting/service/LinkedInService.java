@@ -22,7 +22,7 @@ public class LinkedInService
 		 String url = "https://api.linkedin.com/v2/ugcPosts";
 		 
 	        // Build the request body
-	        String requestBody = "{\"author\":\"urn:li:person:cHTCMRpubB\",\"lifecycleState\":\"PUBLISHED\",\"specificContent\":{\"com.linkedin.ugc.ShareContent\":{\"shareCommentary\":{\"text\":\"" + message + "\"},\"shareMediaCategory\":\"NONE\"}},\"visibility\":{\"com.linkedin.ugc.MemberNetworkVisibility\":\"PUBLIC\"}}";
+	        String requestBody = "{\"author\":\"urn:li:person:Your_ProfileId\",\"lifecycleState\":\"PUBLISHED\",\"specificContent\":{\"com.linkedin.ugc.ShareContent\":{\"shareCommentary\":{\"text\":\"" + message + "\"},\"shareMediaCategory\":\"NONE\"}},\"visibility\":{\"com.linkedin.ugc.MemberNetworkVisibility\":\"PUBLIC\"}}";
 	        System.out.println("control is here: "+message);
 	        // Make the API call
 	        // You can use any HTTP client library (e.g., Apache HttpClient, OkHttp) to send the POST request
